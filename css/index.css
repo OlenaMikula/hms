@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe,h1 ,h2 ,h3 ,h4 ,h5 ,h6 , p, blockquote, 
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, 
+canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, 
+ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%:
+    font: inherit;
+    vertical-align: baseline;
+}
+html {height: 100%}
+body {
+    height: 100%;
+    font: 14px/24px Arial, Tahoma, sans-serif;
+    background-color: #ebebeb;
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+ol,ul {list-style: none;}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a, a:hover {text-decoration: none}
+
+
+
+
+* {box-sizing: border-box}
+.mySlides {display:none}
+.slideshow-container {
+  max-width: 100%;
+  min-width: 700px;
+  padding: 0px;
+  z-index: -1;
+  position: absolute;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 1}
+}
+
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+body {
+  font: 9px "open sans", Arial, sans-serif;
+  background: #cdcdd5;
+  margin: 0px;
+  min-width: 700px;
+}
+
+ul.navbar {
+  width: 100%;
+  min-width: 780px;
+  background: #fff; /* Old browsers */
+  margin: 0px;
+  position: fixed;
+  z-index: 5;
+}
+
+ul.navbar li {
+	float: left;
+	margin: 0;
+	position: relative;
+}
+
+ul.navbar li a {
+	display: block;
+	padding: 13px 15px;
+	color: #777 !important;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .2s ease-in-out;
+}
+
+ul.navbar li a:hover,
+ul.navbar li:hover > a {
+	background: #cc0000;
+	color: #fff !important;
+}
+
+ul.navbar li ul {
+  margin: 0;
+  position: absolute;
+  background: #222;
+  left: 10%;
+  font-size: 10px;
+  min-width: 170px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+  transition: all .1s ease;
+}
+
+ul.navbar ul li { float: none; }
+ul.navbar li:hover > ul { opacity: 1; visibility: visible; left: 0; max-height: 250px }
+ul.navbar > li:hover > ul { opacity: 1; visibility: visible; top: 100%; left: 0; }
+ul.navbar li > ul  ul { top: 0; left: 90%; }
+ul.navbar li > ul li:hover > ul { left: 100%; }
+
+
+
+.logo img {
+    margin-top: 80px;
+    position: relative;
+    max-width: 200px;
+}
+@media (min-width: 10px) and (max-width: 700px) {
+    .logo img {
+        width: 100px;
+    }
+}
+@media (min-width: 701px) and (max-width: 1300px) {
+    .logo img {
+        width: 110px;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1600px) {
+    .logo img {
+        width: 150px;
+    }
+}
+@media (min-width: 1601px) and (max-width: 1800px) {
+    .logo img {
+        width: 170px;
+    }
+}
+.skills {
+    margin-top: 30px;
+    position: relative;
+    color: #cc0000;
+}
+
+
+.works {
+    max-width: 1920px;
+    height: 1080px;
+}
+.works .left, .right {
+    width: 50%;
+}
+.works .left {
+    background-color:red;
+    height: 1080px;
+}

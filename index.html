@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
+        <title>HM studio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="HM Studio Studio is a personal online portfolio, visual playground 
+        and testing ground of Olena Mikula. Most of the showcased work are web, graphics, design." />
+        <meta name="keywords" content="Interior Design, Design, Ukraine, Lviv" />
+    </head>
+    <body>
+        <div class="slideshow-container">
+			<div class="mySlides fade">
+  				<img src="img/slide1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+  				<img src="img/slide2.jpg" style="width:100%">
+  			</div>
+			<div class="mySlides fade">
+  				<img src="img/slide3.jpg" style="width:100%">
+  			</div>
+  		</div>
+  		<div class="navbar">
+  		    <ul class="navbar cf">
+			<li><a href="#">HM Studio</a></li>
+			<li><a href="">РОБОТИ</a>
+			    <ul>
+			        <li><a href="#">ДИЗАЙН ІНТЕР'ЄРУ</a></li>
+			        <li><a href="#">РЕМОНТНІ РОБОТИ</a></li>
+			        <li><a href="#">ЕЛЕМЕНТИ ДЕКОРУ</a></li>
+			    </ul>
+			</li>
+			<li><a href="">ПОСЛУГИ</a>
+				<ul>
+			        <li><a href="#">ДИЗАЙН ІНТЕР'ЄРУ</a></li>
+			        <li><a href="#">РЕМОНТНІ РОБОТИ</a></li>
+			        <li><a href="#">САНТЕХНІЧНІ ТА ЕЛЕКТРОМОНТАЖНІ РОБОТИ</a></li>
+			        <li><a href="#">ОЗДОБЛЮВАЛЬНІ РОБОТИ</a></li>
+			        <li><a href="#">ВИГОТОВЛЕННЯ ЕЛЕМЕНТІВ ДЕКОРУ</a></li>
+			    </ul>
+			</li>
+			<li><a href="price/priceHMstudio.docx">ПРАЙС</a></li>
+			<li><a href="blog/blog.html#">БЛОГ</a></li>
+			<li><a href="">КОНТАКТИ</a></li>
+		</ul>
+  		</div>
+  		<div class="logo">
+			<img src="img/logo.png">
+			<div class="skills">
+		    	<h1>MAKE YOUR DREAMS COME TRUE</h1>
+		    	<br>
+		    	<h2>ДИЗАЙН ІНТЕР'ЄРІВ, РЕМОНТ ПРИМІЩЕНЬ, А ТАКОЖ ДИЗАЙНЕРСЬКІ ВИРОБИ ПІД ЗАМОВЛЕННЯ</h2>
+			</div>
+		</div> 
+		<div class="works">
+		    <div class="left">
+		        
+		    </div>
+		    <div class="right">
+		        
+		    </div>
+		</div>
+  		<script>
+			var slideIndex = 0;
+			showSlides();
+			function showSlides() {
+    			var i;
+				var slides = document.getElementsByClassName("mySlides");
+    			for (i = 0; i < slides.length; i++) {
+    				slides[i].style.display = "none";}
+    			slideIndex++;
+    			if (slideIndex> slides.length) {slideIndex = 1}    
+    			slides[slideIndex -1].style.display = "block";  
+    			setTimeout(showSlides, 2500); 
+			}
+		</script>
+    </body>
+</html>
